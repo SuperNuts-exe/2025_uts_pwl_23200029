@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 export default function PreorderPage() {
 
-    const[preorders,setPreorders] = useState([]);
+  const [preorders, setPreorders] = useState([]);
 
   const [formVisible, setFormVisible] = useState(false);
   const [ order_date, setOrderDate ] = useState('');
@@ -49,6 +49,13 @@ export default function PreorderPage() {
         setMsg('Gagal menyimpan data');
     }
 };
+
+//   // CderBy(item.order_by);
+//     setSelectedPackage(item.selected_package);
+//     setQty(item.qty);
+//     setStatus(item.status === "Lunas" ? "Lunas" : "Belum Lunas");
+//     setEditId(item.id);
+//     setFormVisible(true);
 
 const handleEdit = (item) => {
     setOrderDate(item.order_date);
